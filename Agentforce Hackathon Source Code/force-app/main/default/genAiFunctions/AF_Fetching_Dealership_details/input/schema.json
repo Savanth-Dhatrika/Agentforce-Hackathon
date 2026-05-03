@@ -1,0 +1,21 @@
+{
+  "required" : [ "modelName", "zipCode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "modelName" : {
+      "title" : "modelName",
+      "description" : "Model Name of the Vehicle for test drive",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "zipCode" : {
+      "title" : "zipCode",
+      "description" : "Zip code to fetch dealers from the nearby area",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

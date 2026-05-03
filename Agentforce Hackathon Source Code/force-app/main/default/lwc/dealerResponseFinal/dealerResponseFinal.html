@@ -1,0 +1,55 @@
+<template>
+    <lightning-card title="Dealers">
+      <div class="slds-p-around_medium">
+        <!-- Bind directly to the @api `value`. Expecting value.dealers as an array. -->
+        <template if:true={response}>
+          <!-- Dealer list -->
+          
+            <div class="slds-grid slds-wrap">
+              <template for:each={response} for:item="dealer">
+                <div key={dealer.dealerId} class="slds-p-around_small">
+                  <div class="slds-text-heading_small">{dealer.dealerName}</div>
+                  <div class="slds-text-body_small slds-m-top_x-small">{dealer.dealerAddress}</div>
+  
+                  <!-- Assets for this dealer -->
+                  <template if:true={dealer.assets}>
+                    <div class="slds-m-top_small">
+                      <div class="slds-text-title_caps slds-m-bottom_x-small">Vehicles</div>
+                      <div class="slds-grid slds-wrap">
+                        <template for:each={dealer.assets} for:item="asset">
+                          <div key={asset.assetId} class="slds-p-around_x-small">
+                            <div class="slds-text-body_regular">{asset.assetName}</div>
+  
+                            <!-- Available slots for this asset -->
+                            <template if:true={asset.availableSlots}>
+                              <div class="slds-m-top_x-small">
+                                <div class="slds-text-title_caps slds-m-bottom_x-small">Available Time Slots</div>
+                                <div class="slds-grid slds-wrap">
+                                  <template for:each={asset.availableSlots} for:item="slot">
+                                    <div key={slot.slotId} class="slds-p-around_x-small slds-text-body_small">
+                                      {slot.timeSlot}
+                                    </div>
+                                  </template>
+                                </div>
+                              </div>
+                            </template>
+                          </div>
+                        </template>
+                      </div>
+                    </div>
+                  </template>
+  
+                </div>
+              </template>
+            </div>
+          
+  
+          
+        </template>
+  
+        <template if:false={response}>
+          <div>No data provided</div>
+        </template>
+      </div>
+    </lightning-card>
+  </template>

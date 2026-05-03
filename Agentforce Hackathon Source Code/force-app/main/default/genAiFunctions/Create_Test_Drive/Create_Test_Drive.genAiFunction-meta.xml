@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create a test drive for a customer at the nearest dealership based on their zip code</description>
+    <developerName>Create_Test_Drive</developerName>
+    <invocationTarget>TestDriveAgentActions</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>Create_Test_Drive</localDeveloperName>
+    <masterLabel>Create Test Drive</masterLabel>
+</GenAiFunction>

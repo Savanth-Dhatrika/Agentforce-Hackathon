@@ -1,0 +1,73 @@
+<template>
+  <lightning-card title="Dealers">
+    <div class="slds-p-around_medium">
+
+      <template if:true={responseValue}>
+        <div class="slds-grid slds-wrap">
+          <template for:each={responseValue.responses} for:item="dealer">
+            <div key={dealer.dealerId} class="slds-p-around_small">
+
+              <div class="slds-text-heading_small slds-text-title_bold slds-text-color_brand">
+                {dealer.dealerName}
+              </div>
+              <div class="slds-text-body_small slds-m-top_x-small">{dealer.dealerAddress}</div>
+
+              <!-- Assets for this dealer -->
+              <template if:true={dealer.assets}>
+                <div class="slds-m-top_small">
+                  <div class="slds-text-title_caps slds-m-bottom_x-small">Vehicles</div>
+
+                  <div class="slds-grid slds-wrap">
+                    <template for:each={dealer.assets} for:item="asset">
+                      <div key={asset.assetId} class="slds-p-around_x-small">
+                        
+                        <div class="slds-text-body_regular">{asset.assetName}</div>
+
+                        <!-- Available slots -->
+                        <template if:true={asset.availableSlots}>
+                          <div class="slds-m-top_x-small">
+                            <div class="slds-text-title_caps slds-m-bottom_x-small">
+                              Available Time Slots
+                            </div>
+
+                            <!-- SLOT PILLS -->
+                            <div class="slds-grid slds-wrap">
+                              <template for:each={asset.availableSlots} for:item="slot">
+                                <div key={slot.slotId} class="slds-p-around_x-small slds-size_1-of-1">
+                                  
+                                  <div
+                                    class={slot.className}
+                                    data-slot-id={slot.slotId}
+                                    data-dealer-id={dealer.dealerId}
+                                    data-asset-id={asset.assetId}
+                                    onclick={handleSlotSelect}
+                                  >
+                                    <span>{slot.timeSlot}</span>
+                                    <span class="dot"></span>
+                                  </div>
+
+                                </div>
+                              </template>
+                            </div>
+
+                          </div>
+                        </template>
+
+                      </div>
+                    </template>
+                  </div>
+                </div>
+              </template>
+
+            </div>
+          </template>
+        </div>
+      </template>
+
+      <template if:false={responseValue}>
+        <div>No data provided</div>
+      </template>
+
+    </div>
+  </lightning-card>
+</template>

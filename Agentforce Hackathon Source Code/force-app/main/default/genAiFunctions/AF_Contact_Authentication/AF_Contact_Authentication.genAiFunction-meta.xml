@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This actions gets the contact Id of the user.</description>
+    <developerName>AF_Contact_Authentication</developerName>
+    <invocationTarget>AF_Contact_Authentication</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>AF_Contact_Authentication</localDeveloperName>
+    <masterLabel>AF | Contact Authentication</masterLabel>
+</GenAiFunction>

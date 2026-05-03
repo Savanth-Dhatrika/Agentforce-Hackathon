@@ -1,0 +1,12 @@
+<template>
+    <template if:true={showFlow}>
+        <lightning-flow
+            flow-api-name="Account_Wrapper_Demo_Flow"
+            flow-input-variables={inputVariables}
+            onstatuschange={handleStatusChange}>
+        </lightning-flow>
+    </template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+    </template>
+</template>

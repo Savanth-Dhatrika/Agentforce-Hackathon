@@ -1,0 +1,28 @@
+{
+  "required" : [ "PreferredDate", "VehicleName", "ZipCode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "PreferredDate" : {
+      "title" : "PreferredDate",
+      "description" : "Date selected by customer",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "VehicleName" : {
+      "title" : "VehicleName",
+      "description" : "Model name of the vehicle",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "ZipCode" : {
+      "title" : "ZipCode",
+      "description" : "Zip code to search dealers",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

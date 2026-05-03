@@ -1,0 +1,38 @@
+.slot-pill {
+    border: 1px solid #d8dde6;
+    border-radius: 25px;
+    padding: 12px 16px;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.slot-pill:hover {
+    background-color: #e5eaf0;
+}
+
+/* Selected (blue) */
+.slot-pill-selected {
+    background-color: #0176d3;
+    color: white;
+    border-color: #0176d3;
+    border: 1px solid #d8dde6;
+    border-radius: 25px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Red dot */
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+}

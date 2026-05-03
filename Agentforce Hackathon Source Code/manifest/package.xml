@@ -1,36 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>TestDriveBookingService</members>
+        <members>TestDriveAgentActions</members>
+        <members>AccountWrapper</members>
+        <members>DealerTestDriveService</members>
+        <members>flowResponse</members>
+        <members>DealerTestDriveServiceGrouped</members>
+        <members>SlotDto</members>
+        <members>AssetSlots</members>
+        <members>DealerResponse</members>
+        <members>DelaerTestDriveCreateServiceApex</members>
+        <members>Request</members>
+        <members>DealerResponseFinal</members>
+        <members>TwilioWhatsAppController</members>
+        <members>TestDriveCreateService</members>
+        <members>DealerTestDriveServiceAuraEnabled</members>
+        <members>TestDriveController</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
+        <members>Book_Test_Drive_Flow</members>
+        <members>Account_Wrapper_Demo_Flow</members>
+        <members>Default_Routing</members>
+        <members>AF_Fetching_Dealership_Details</members>
+        <members>AF_Create_Test_Drive</members>
+        <members>AF_Contact_Authentication</members>
+        <members>AF_Book_Test_Drive</members>
+        <name>Flow</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexPage</name>
+        <members>Uni Cars Test Drive Portal</members>
+        <members>ESW_Booking_Agent_1777024512668</members>
+        <name>Network</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>accountFlowLauncher</members>
+        <members>dealerResponse</members>
+        <members>dealerResponseClone</members>
+        <members>dealerResponseFinal</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Vehicle</members>
+        <members>VehicleDefinition</members>
+        <members>Product2</members>
+        <members>Test_Drive__c</members>
+        <members>Twilio_Settings__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Twilio_Settings.Default</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
         <members>*</members>
-        <name>StaticResource</name>
+        <name>GenAiFunction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GenAiPlugin</name>
     </types>
     <version>66.0</version>
 </Package>

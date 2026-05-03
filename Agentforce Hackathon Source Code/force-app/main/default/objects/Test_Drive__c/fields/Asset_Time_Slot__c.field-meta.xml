@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Time_Slot__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Lookup to the Asset Time Slot chosen for this test drive</description>
+    <inlineHelpText>Select the Asset Time Slot reserved for this test drive</inlineHelpText>
+    <label>Asset Time Slot</label>
+    <referenceTo>Asset_Time_Slot__c</referenceTo>
+    <relationshipLabel>Test Drives</relationshipLabel>
+    <relationshipName>TestDrive_TimeSlots</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

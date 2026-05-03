@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Given zip and model, returns dealers with available assets and slots</description>
+    <developerName>Find_Available_Test_Drive_Slots_for_Booking</developerName>
+    <invocationTarget>DelaerTestDriveCreateServiceApex</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>Find_Available_Test_Drive_Slots_for_Booking</localDeveloperName>
+    <masterLabel>Find Available Test Drive Slots for Booking</masterLabel>
+</GenAiFunction>

@@ -1,0 +1,28 @@
+{
+  "required" : [ "PreferredDate", "VehicleName", "ZipCode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "PreferredDate" : {
+      "title" : "PreferredDate",
+      "description" : "Preferred Date for Test Drive",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "VehicleName" : {
+      "title" : "VehicleName",
+      "description" : "Vehicle Name for Test Drive",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "ZipCode" : {
+      "title" : "ZipCode",
+      "description" : "Zip code to search dealers",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,19 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "dealershipModelDetails" : {
+      "title" : "dealershipModelDetails",
+      "description" : "Delaership details with Model Name and available slots",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__flowResponse?isAuraEnabled=true"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
